@@ -1,0 +1,40 @@
+.think-piece-component-container {
+    height: 100vh;
+    width: 100wh;
+}
+.think-piece-container-wrapper {
+    padding-top: 70px;
+    height: 100%;
+}
+
+.think-piece-article-menu {
+    border-right: 1px solid red;
+    height: 100%;
+    padding-left: 0px;
+    z-index: 0;
+}
+
+.think-piece-content-article {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+}
+
+.think-piece-article-row {
+    display: flex;
+    margin: 10px 0;
+}
+.think-piece-article-row-title h4 {
+    margin: 5px 0 5px 5px;
+    font-size: 25px;
+}
+
+.think-piece-article-row-title p {
+    margin: 5px 0 5px 5px;
+    font-size: 15px;
+}
+
+.think-piece-article-row h4 {
+    z-index: 1;
+    margin-left: 5px;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTFT-8">
+    <title>HTML TUTORIAL</title>
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="main-wrapper">
+    <header>
+        <div class="navbar-container">
+            <a class="navbar-brand" href="./index.html">
+                <img alt="Logo" class="img-fluid logo" src="./images/logo.svg" title="Logo">
+            </a>
+            <ul>
+                <li><a href="./about-us.html">ABOUT US</a></li>
+                <li><a href="./think-piece.html">THINK PIECE</a></li>
+                <li><a href="./beyond-banking.html">BEYOND BANKING</a></li>
+            </ul>
+        </div>
+    </header>
+    <!--first page starts-->
+    <div class="component-container">
+        <!--background video starts-->
+        <div class=" background-video">
+            <video autoplay controls="true" id="myVideo" loop muted poster="./images/video_placeholder.jpg" preload="metadata">
+
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+        <!--background video ends-->
+
+        <div class="container">
+            <div class="carousel slide" data-ride="carousel" id="myCarousel">
+                <!-- Indicators -->
+
+                <ol class="carousel-indicators">
+                    <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+                    <li data-slide-to="1" data-target="#myCarousel"></li>
+                    <li data-slide-to="2" data-target="#myCarousel"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="carousel-caption">
+
+                            <!-- circle starts -->
+                            <div class="circle">
+                                <div class="halfclip">
+                                    <div class="halfcircle clipped ">
+                                    </div>
+                                </div>
+                                <div class="halfcircle fixed">
+                                </div>
+                            </div>
+                            <!-- circle ends -->
+
+                            <h1 id="redefine-banking">Redefine Banking</h1>
+                            <p>The Open Vault at OCBC is redefining banking through co-innovation. This is a permanent
+                                open call for innovative
+                                global fintech firms: Collaborate with us to create the bank of the future.</p>
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <div class="carousel-caption">
+                            <div class="halfclip">
+                                <div class="halfcircle clipped ">
+                                </div>
+                            </div>
+                            <div class="halfcircle fixed">
+                            </div>
+                            <h1>We're Innovating for Tomorrow</h1>
+                            <p>Change is the only rapid constant and we know it firsthand. That's why we are
+                                strategically harnessing open
+                                innovation to create solutions that will truly make a difference to our customers.</p>
+                            <a class="cta-link" href="./about-us.html">
+                                Find Out More &#8594;
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="carousel-caption">
+                            <div class="halfclip">
+                                <div class="halfcircle clipped ">
+                                </div>
+                            </div>
+                            <div class="halfcircle fixed">
+                            </div>
+                            <h1>We're Creating an Ecosystem</h1>
+                            <p>We envision banking in the future as a natural, personal way of life. To deliver this
+                                seamlessly for our customers.
+                                We're constantly partnering other businesses to enrich our ecosystem.</p>
+                            <a class="cta-link">
+                                Find Out More &#8594;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Left and right controls -->
+                <span class="sr-only">Previous</span>
+                <span class="sr-only">Next</span>
+            </div>
+        </div>
+    </div>
+    <!--first page ends-->
+</div>
+</body>
+</html>

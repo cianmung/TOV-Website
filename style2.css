@@ -1,0 +1,105 @@
+.component-container {
+    width: 100wh;
+    height: 100vh;
+    margin: 0;
+}
+
+.make-row {
+    width: 100%;
+    height: 75%;
+    margin: 70px 0 90px 0;
+    z-index: 1;
+    position: relative;
+}
+.make-row h1 {
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.contact-first-column {
+    text-align: center;
+    right: 0;
+    top: 0;
+    background-color: rgb(220,220,220);
+}
+
+.contact-first-column-text {
+    margin: 0 30px;
+    position: absolute;
+    top: 20%;
+}
+
+
+.contact-first-column a:hover{
+    cursor: pointer;
+    background-color: black;
+}
+.contact-second-column {
+    background-color: rgb(200,200,200);
+    z-index: 1;
+}
+
+.contact-second-column-text{
+    position: absolute;
+    top: 20%;
+}
+
+
+.contact-third-column {
+    background-color: rgb(180,180,180);
+}
+
+.contact-third-column-text{
+    position: absolute;
+    top: 20%;
+}
+
+.contact-icon-container {
+    text-align: center;
+}
+
+.contact-icon-container a {
+    margin: 10px;
+    text-decoration: none;
+}
+
+.contact-icon-container:hover a {
+    text-decoration: none;
+}
+
+.contact-fourth-column {
+    width: 100%;
+    position: relative;
+}
+
+.contact-fourth-column::before {
+    background-image:  url('./images/location.png');
+    background-size: cover;
+    background-position: center;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+.contact-fourth-column h2 {
+    font-weight: bold;
+}
+
+.contact-address {
+    margin: 0 30px;
+    position: absolute;
+    top: 20%;
+}
+
+.term-and-policy {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0 10px 10px 0;
+}
