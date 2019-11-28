@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="12px" viewBox="0 0 15 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-right</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="arrow-right" transform="translate(-13.000000, -14.000000)">
+            <g id="Group">
+                <polyline id="Shape" stroke-width="1.5" points="21.37 25 26.67 20 21.37 15"></polyline>
+                <path d="M13.33,20 L26.31,20" id="Shape" stroke-width="1.5"></path>
+                <rect id="Rectangle-path" fill="none" stroke="none" x="0" y="0" width="40" height="40"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
