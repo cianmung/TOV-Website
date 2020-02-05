@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>Think Piece</title>
     <link type="text/css" rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -15,49 +16,61 @@
 </head>
 <body>
 <header>
-    <div class="navbar-container think-piece-nav-bar">
-        <div class="navbar-wrapper">
+    <div class="navbar-container">
+        <div id="navbar-menu-wrapper">
             <a class="navbar-brand" href="./index.html">
                 <img class="img-fluid logo" alt="Logo" title="Logo" src="./images/logo.svg">
             </a>
-            <ul>
-                <li><a href="./about-us.html">ABOUT US</a></li>
-                <li><a href="./think-piece.html">THINK PIECE</a></li>
-                <li><a href="./beyond-banking.html">BEYOND BANKING</a></li>
-            </ul>
+            <div class="navbar-menu-icon" onclick="clickMenuIcon()">
+                <div id="menu-icon" class="menu-icon-wrapper">
+                    <svg class="icon-inner-wrapper" viewBox="0 0 100 100">
+                        <path id="top-line" d="M30,37 L70,37 Z"></path>
+                        <path id="middle-line" d="M30,50 L70,50 Z"></path>
+                        <path id="bottom-line" d="M30,63 L70,63 Z"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="navbar-nav-wrapper">
+                <ul>
+                    <li><a href="./about-us.html">ABOUT US</a></li>
+                    <li><a href="./think-piece.html">THINK PIECE</a></li>
+                    <li><a href="./beyond-banking.html">BEYOND BANKING</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </header>
-
-<div class="think-piece-component-container">
-    <div class="think-piece-container-wrapper">
-        <div class="think-piece-article-menu col-sm-2 col-md-2 col-lg-2 col-xl-1" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-sine">
-            <div class="think-piece-article-row">
-                <h3 style="margin: 10px auto;">Articles</h3>
-            </div>
-            <div id="forget-me-not" class="think-piece-article-row">
-                <div class="fa" style="margin:1px 5px 0 0;">&#xf101;</div>
-                <div class="think-piece-article-row-title">
-                    <a>Forget Me Not:
-                        Enabling Festival 2019</a>
-                </div>
-            </div>
-            <div id="forget-me-not1" class="think-piece-article-row">
-                <div class="fa" style="margin:1px 5px 0 0;">&#xf101;</div>
-                <div class="think-piece-article-row-title">
-                    <a>A Little Less Conversation,
-                        A Little More Action, Please</a>
-                </div>
-            </div>
+<!--Arrow Starts-->
+<div class="arrow-container">
+    <div class="arrow-wrapper-inner">
+        <div class="arrow arrow-first"></div>
+        <div class="arrow arrow-second"></div>
+    </div>
+</div>
+<div class="arrow-container-up">
+    <div class="arrow-wrapper-inner">
+        <div class="arrow arrow-first"></div>
+        <div class="arrow arrow-second"></div>
+    </div>
+</div>
+<!--Arrow Ends-->
+<!--Dark Mode Starts-->
+<div class="circle-dark-mode-switch-wrapper">
+    <div class="circle-dark-mode-switch">
+        <div class="day-mode">
+            <img id="dayMode" src="./images/day.png" height="35px" alt="Day Mode" width="35px" onclick="darkModeOn(this)">
         </div>
+        <div class="night-mode">
+            <img id="nightMode" src="./images/night.png" height="35px" alt="Night Mode" width="35px" onclick="darkModeOn(this)">
+        </div>
+    </div>
+</div>
+<!--Dark Mode Ends-->
+<div class="think-piece-component-container">
+    <div class="think-piece-container-wrapper">        
         <div class="think-piece-content-article col-sm-10 col-md-10 col-lg-10 col-xl-11">
-            <div id="defaultContent" class="think-piece-content-article-body">
-                <div class="defaultContent-text" >
-                <h1>Think Piece</h1>
-                <h2>Read the articles and know about us more.</h2>
-                </div>
-            </div>
-            <div id="firstContent" class="think-piece-content-article-body hide">
+            <div id="firstContent" class="think-piece-content-article-body">
                 <h1>Forget Me Not:
                     <br>Enabling Festival 2019</h1>
                 <p><em>If you have met one person with dementia, you have only met one person. Each individual will talk,
@@ -124,7 +137,7 @@
                     recent memory, commonly misplacing objects and facing difficulty in communicating with others). The
                     projects
                     that stood out were those that arrested the deterioration the condition causes by engagement.</p>
-                <div style="display: flex; justify-content: center;">
+                <div id="Dementia2"style="display: flex; justify-content: center;">
                     <img src="./images/thinkp_dementia2.png" alt="Dementia2"></div>
                 <p> The hackathon saw many great ideas contributed by the broader community and those living with
                     Dementia. From
@@ -153,13 +166,7 @@
                     the biggest challenges,” said Mr Ryan Lou. “We want to create meaningful partnerships that can bring
                     to life practical community solutions that empower individuals and their families to enjoy their
                     lives outside the disease.”</p>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
+                
                 <p> Diagnosing, treating, and managing dementia brings many challenges. There is extra emotional
                     pressure on family members
                     who are also their loved ones’ caregivers, and financial obligations for family members who hire
@@ -176,16 +183,14 @@
                 <br>
                 <br>
                 <br>
-                <div style="font-weight: bold;">
-                    <p><em> The Open Vault at OCBC Team </em></p></div>
             </div>
 
-            <div id="secondContent" class="think-piece-content-article-body hide">
+            <div id="secondContent" class="think-piece-content-article-body">
                 <h1>A Little Less Conversation,
                     <br>A Little More Action, Please</h1>
-                <div style="display: flex; justify-content: center;">
+                <div id="secondContentFirstPic"style="display: flex; justify-content: center;">
                     <img src="./images/article1_image.jpg" width="70%" height="70%" alt="Article1"></div>
-                <h2 style="font-weight: bold; font-size: 2.8em;">
+                <h2>
                     The texting generation</h2>
 
                 <p>A 2017 Salesforce study pointed to a much higher percentage of millennials (44 percent) who prefer to
@@ -200,7 +205,7 @@
                     technology to take it a step further by making the chatbot a reliable resource and aggregator of
                     information
                     on-demand. And in turn, transforming a pivotal point in the customer decision journey.</p>
-                <h2 style="font-weight: bold; font-size: 2.8em;">
+                <h2>
                     Chatbots in the world of banking and finance</h2>
 
                 <p>In the banking world, the conversation around chatbots takes on an added layer of complexity with the
@@ -235,7 +240,7 @@
                     anywhere the bot has increased the scalability of our business and will allow us to expand beyond
                     our current
                     suite of products in the future.</p>
-                <h2 style="font-weight: bold; font-size: 2.8em;">A little less conversation, a little more action,
+                <h2>A little less conversation, a little more action,
                     please</h2>
 
                 <h3 class="quote">
@@ -245,7 +250,7 @@
                     we built
                     'Emma' with personality.</h3>
 
-                <h2 style="font-weight: bold; font-size: 2.8em;">Here’s some food for thought –</h2>
+                <h2>Here’s some food for thought –</h2>
                 <p>Going through the journey of innovation, many companies have found that the key to promoting
                     mainstream adoption
                     is prioritising certain primary features over others.</p>
@@ -282,9 +287,25 @@
                     <p><em> The Open Vault at OCBC Team </em></p></div>
             </div>
         </div>
+        <div class="think-piece-article-menu col-sm-2 col-md-2 col-lg-2 col-xl-1" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                <div id="forget-me-not" class="think-piece-article-row" href="#firstContent">
+                    <div class="think-piece-article-pointer" style="margin:1px 5px 0 0;"><p class="fa">&#xf101;</p></div>
+                    <div class="think-piece-article-row-title">
+                        <a id="firstContentTitle" href="#firstContent" style="font-weight: bold;">Forget Me Not:
+                            Enabling Festival 2019</a>
+                    </div>
+                </div>
+                <div id="less-conversation-more-action" class="think-piece-article-row" href="#secondContent">
+                    <div class="think-piece-article-pointer" style="margin:1px 5px 0 0;"><p class="fa">&#xf101;</p></div>
+                    <div class="think-piece-article-row-title">
+                        <a id="secondContentTitle" href="#secondContent">A Little Less Conversation,
+                            A Little More Action, Please</a>
+                    </div>
+                </div>
+            </div>
     </div>
 </div>
-<script src="function3.js"></script>
+<script src="think-piece.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();

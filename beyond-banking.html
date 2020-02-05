@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>Beyond Banking</title>
     <link type="text/css" rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -12,236 +14,487 @@
     <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/409445/animateAnything.js"></script>
 </head>
+
 <body>
-<header>
-    <div class="navbar-container">
-        <div class="navbar-wrapper">
-            <a class="navbar-brand" href="./index.html">
-                <img class="img-fluid logo" alt="Logo" title="Logo" src="./images/logo.svg">
-            </a>
-            <ul>
-                <li><a href="./about-us.html">ABOUT US</a></li>
-                <li><a href="./think-piece.html">THINK PIECE</a></li>
-                <li><a href="./beyond-banking.html">BEYOND BANKING</a></li>
-            </ul>
-        </div>
-    </div>
-</header>
-<div class="component-container-beyond-banking">
-    <div class="beyond-banking-first-text-wrapper">
-        <div id="typedtext" class="beyond-banking-first-text" data-aos="fade-up" data-aos-duration="500">
-        </div>
-    </div>
-</div>
-<div class="component-container-beyond-banking">
-    <div class="we-believe-in-the-power-of">
-        <div class="we-believe-in-the-power-of-first-text">
-            <h2>We believe in the power of...</h2>
-        </div>
-        <div class="we-believe-in-the-power-of-first-row-wrapper">
-            <div id="we-believe-in-the-power-of-first-row-1" class="we-believe-in-the-power-of-first-row col-12">
-                <div class="we-believe-in-the-power-of-first-row-col">
-                    <h3>Co-created <br>Solutions</h3>
-                    <img width="242" height="272" class="we-believe-in-the-power-of__img--pillar"
-                         src="./images/pillar1.jpg" alt="pillar1">
+    <header>
+        <div class="navbar-container">
+            <div id="navbar-menu-wrapper">
+                <a class="navbar-brand" href="./index.html">
+                    <img class="img-fluid logo" alt="Logo" title="Logo" src="./images/logo.svg">
+                </a>
+                <div class="navbar-menu-icon" onclick="clickMenuIcon()">
+                    <div id="menu-icon" class="menu-icon-wrapper">
+                        <svg class="icon-inner-wrapper" viewBox="0 0 100 100">
+                            <path id="top-line" d="M30,37 L70,37 Z"></path>
+                            <path id="middle-line" d="M30,50 L70,50 Z"></path>
+                            <path id="bottom-line" d="M30,63 L70,63 Z"></path>
+                        </svg>
+                    </div>
                 </div>
-            </div>
-            <div id="we-believe-in-the-power-of-first-row-1-plus"
-                 class="we-believe-in-the-power-of-first-row-plus col-12">
-                <img width="42" height="42" src="./images/plus.svg" alt="plus.svg">
-            </div>
-            <div id="we-believe-in-the-power-of-first-row-2" class="we-believe-in-the-power-of-first-row col-12">
-                <div class="we-believe-in-the-power-of-first-row-col">
-                    <h3>Meaningful <br>Collaborations</h3>
-                    <img width="242" height="272" class="we-believe-in-the-power-of__img--pillar"
-                         src="./images/pillar2.jpg" alt="pillar2">
-                </div>
-            </div>
-            <div id="we-believe-in-the-power-of-first-row-2-plus"
-                 class="we-believe-in-the-power-of-first-row-plus col-12">
-                <img width="42" height="42" src="./images/plus.svg" alt="plus.svg">
-            </div>
-            <div id="we-believe-in-the-power-of-first-row-3" class="we-believe-in-the-power-of-first-row col-12">
-                <div class="we-believe-in-the-power-of-first-row-col">
-                    <h3>Partnerships <br>Beyond Banking</h3>
-                    <img width="242" height="272" class="we-believe-in-the-power-of__img--pillar"
-                         src="./images/pillar3.jpg" alt="pillar3">
+                <div class="navbar-nav-wrapper">
+                    <ul>
+                        <li><a href="./about-us.html">ABOUT US</a></li>
+                        <li><a href="./think-piece.html">THINK PIECE</a></li>
+                        <li><a href="./beyond-banking.html">BEYOND BANKING</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="we-believe-in-the-power-of-second-row-wrapper col-12">
-            <div class="we-believe-in-the-power-of-second-row">
-                <img width="200" height="176" class="we-believe-in-the-power-of__img--hand-left"
-                     src="./images/hand_left.png" alt="hand_left">
-            </div>
-            <div class="we-believe-in-the-power-of-second-row">
-                <img width="470" height="176" class="we-believe-in-the-power-of__img--banner"
-                     src="./images/banner.png" alt="New Business Value. Improved Customer Experiences">
-            </div>
-            <div class="we-believe-in-the-power-of-second-row">
-                <img width="200" height="176" class="we-believe-in-the-power-of__img--hand-right"
-                     src="./images/hand_right.png"
-                     alt="hand_left">
-
+    </header>
+    <div class="component-container-beyond-banking">
+        <div class="beyond-banking-first-text-wrapper">
+            <div id="typedtext" class="beyond-banking-first-text" data-aos="fade-up" data-aos-duration="500">
             </div>
         </div>
     </div>
-</div>
-<div class="component-container-beyond-banking">
+    <div class="component-container-beyond-banking">
+        <div class="we-believe-in-the-power-of">
+            <div class="we-believe-in-the-power-of-inner">
+                <div class="we-believe-in-the-power-of-first-text">
+                    <h2>We believe in the power of...</h2>
+                </div>
+                <div class="we-believe-in-the-power-of-content-wrapper">
+                    <div class="we-believe-in-the-power-of-first-row-wrapper">
+                        <div id="we-believe-in-the-power-of-first-row-1"
+                            class="we-believe-in-the-power-of-first-row col-12">
+                            <div class="we-believe-in-the-power-of-first-row-col">
+                                <h3>Co-created <br>Solutions</h3>
+                                <img width="231" height="260" class="we-believe-in-the-power-of__img--pillar"
+                                    src="./images/pillar1.png" alt="pillar1">
+                            </div>
+                        </div>
+                        <div id="we-believe-in-the-power-of-first-row-1-plus"
+                            class="we-believe-in-the-power-of-first-row-plus col-12">
+                            <img width="42" height="42" src="./images/plus.svg" alt="plus.svg">
+                        </div>
+                        <div id="we-believe-in-the-power-of-first-row-2"
+                            class="we-believe-in-the-power-of-first-row col-12">
+                            <div class="we-believe-in-the-power-of-first-row-col">
+                                <h3>Meaningful <br>Collaborations</h3>
+                                <img width="231" height="260" class="we-believe-in-the-power-of__img--pillar"
+                                    src="./images/pillar2.png" alt="pillar2">
+                            </div>
+                        </div>
+                        <div id="we-believe-in-the-power-of-first-row-2-plus"
+                            class="we-believe-in-the-power-of-first-row-plus col-12">
+                            <img width="42" height="42" src="./images/plus.svg" alt="plus.svg">
+                        </div>
+                        <div id="we-believe-in-the-power-of-first-row-3"
+                            class="we-believe-in-the-power-of-first-row col-12">
+                            <div class="we-believe-in-the-power-of-first-row-col">
+                                <h3>Partnerships <br>Beyond Banking</h3>
+                                <img width="231" height="260" class="we-believe-in-the-power-of__img--pillar"
+                                    src="./images/pillar3.png" alt="pillar3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="we-believe-in-the-power-of-second-row-wrapper col-12">
+                        <div class="we-believe-in-the-power-of-second-row">
+                            <img width="170" height="150" class="we-believe-in-the-power-of__img--hand-left"
+                                src="./images/hand_left.png" alt="hand_left">
+                        </div>
+                        <div class="we-believe-in-the-power-of-second-row">
+                            <img width="400" height="150" class="we-believe-in-the-power-of__img--banner"
+                                src="./images/banner.png" alt="New Business Value. Improved Customer Experiences">
+                        </div>
+                        <div class="we-believe-in-the-power-of-second-row">
+                            <img width="170" height="150" class="we-believe-in-the-power-of__img--hand-right"
+                                src="./images/hand_right.png" alt="hand_left">
 
-</div>
-<div class="component-container-beyond-banking">
-
-</div>
-<div class="component-container-beyond-banking">
-
-</div>
-<div class="component-container-beyond-banking">
-
-</div>
-<div class="component-container-beyond-banking">
-
-</div>
-<div class="component-container-beyond-banking">
-
-</div>
-<div class="component-container-beyond-banking">
-
-</div>
-<div class="component-container-beyond-banking">
-    <div class="beyond-banking-video-content-wrapper">
-        <div class="beyond-banking-video-wrapper">
-            <div class="beyond-banking-video-title-wrapper">
-                <div class="beyond-banking-video-title">
-                    <h3 style="margin: 0;">Here's what happened when we collaborated with multiple <br> partners in the
-                        property ecosystem.
-                    </h3>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="beyond-banking-video" style="height: 450px;">
-                <iframe width="100%" height="100%"
+        </div>
+    </div>
+    <!--Dark Mode Starts-->
+    <div class="circle-dark-mode-switch-wrapper">
+        <div class="circle-dark-mode-switch">
+            <div class="day-mode">
+                <img id="dayMode" src="./images/day.png" height="35px" width="35px" title="Day Mode" alt="Day Mode"
+                    onclick="darkModeOn(this)">
+            </div>
+            <div class="night-mode">
+                <img id="nightMode" src="./images/night.png" height="35px" width="35px" title="Night Mode"
+                    alt="Night Mode" onclick="darkModeOn(this)">
+            </div>
+        </div>
+    </div>
+    <!--Dark Mode Ends-->
+    <!--Arrow Starts-->
+    <div class="arrow-container">
+        <div class="arrow-wrapper-inner">
+            <div class="arrow arrow-first"></div>
+            <div class="arrow arrow-second"></div>
+        </div>
+    </div>
+    <div class="arrow-container-up">
+        <div class="arrow-wrapper-inner">
+            <div class="arrow arrow-first"></div>
+            <div class="arrow arrow-second"></div>
+        </div>
+    </div>
+    <!--Arrow Ends-->
+    <div class="component-container-beyond-banking">
+
+    </div>
+    <div class="component-container-beyond-banking">
+
+    </div>
+    <div class="component-container-beyond-banking">
+
+    </div>
+    <div class="component-container-beyond-banking">
+
+    </div>
+    <div class="component-container-beyond-banking">
+
+    </div>
+    <div class="component-container-beyond-banking">
+
+    </div>
+    <div class="component-container-beyond-banking">
+
+    </div>
+    <div class="component-container-beyond-banking">
+        <div class="beyond-banking-video-content-wrapper">
+            <div class="beyond-banking-video-wrapper">
+                <div class="beyond-banking-video-title-wrapper">
+                    <div class="beyond-banking-video-title">
+                        <h3>Here's what happened when we collaborated with multiple <br> partners in
+                            the
+                            property ecosystem.
+                        </h3>
+                    </div>
+                </div>
+                <div class="beyond-banking-video">
+                    <iframe width="100%" height="100%"
                         src="https://www.youtube.com/embed/uF3_wAiAMJY?version=3&enablejsapi=1&feature=youtu.be"
-                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
-            </div>
-            <div class="details-in-the-case-below-text">
-                <div class="details-in-the-case-below-text-wrapper">
-                    <h4>DETAILS IN THE CASE STUDY BELOW </h4>
-                    <img width="15" height="24" src="./images/arrow_down.svg" alt="arrow_down">
+                        title="OCBC OneAdvisor" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="component-container-beyond-banking">
-
-</div>
-<div class="component-container-beyond-banking">
-
-</div>
-<div class="component-container-beyond-banking">
-
-</div>
-<div class="component-container-beyond-banking">
-
-</div>
-<div class="component-container-beyond-banking">
-    <div class="come-partner-us-content-wrapper">
-        <div class="come-partner-us-content">
-            <div class="come-partner-us-title-text">
-                <h1>Come Partner Us!</h1>
-                <p>Neither a fintech firm nor bank? Doesn't matter. Here's how we can collaborate:</p>
-            </div>
-            <div class="come-partner-us-content-first-page">
-                <div class="come-partner-us-content-first-page-1-row">
-                    <div class="come-partner-us-content-first-page-1-row1-content">
-                        <img width="381" height="215" src="./images/partner-us/img_experiment.jpg" alt="img_experiment">
-                        <div class="come-partner-us-content-first-page-1-row1-content-text">
-                            <h3>Experiment with Us</h3>
-                            <p>The Open Vault opens up opportunities for you to use OCBC Bank&rsquo;s data sandbox where
-                                you can experiment with real anonymised customer data and bring your solution to
-                                market swiftly.</p>
-                        </div>
-                    </div>
-                    <div class="come-partner-us-content-first-page-1-row2-content">
-                        <div class="come-partner-us-content-first-page-1-row2-content-text">
-                            <h3>Connect via APIs</h3>
-                            <p>The API Store is a sandbox-testing platform that lets you access additional data from
-                                fintech to lifestyle, and create new solutions. Connect and tap into a stunning amount
-                                of innovation!</p>
-                            <a href="https://api.ocbc.com/store/" target="_blank">EXPLORE NOW &#8594;</a>
-                        </div>
-                        <img width="381" height="215" src="./images/partner-us/img_api.jpg" alt="img_api">
-                    </div>
-                </div>
-                <div class="come-partner-us-content-first-page-separator">
-                    <div class="icon-sandbox">
-                        <img src="./images/partner-us/sandbox.svg" alt="sandbox">
-                    </div>
-                    <div class="come-partner-us-content-first-page-separator-red-line"></div>
-                    <div class="icon-connect">
-                        <img src="./images/partner-us/connect.svg" alt="connect">
+                <div class="details-in-the-case-below-text">
+                    <div class="details-in-the-case-below-text-wrapper" onclick="clickOnCaseStudy()">
+                        <h4>DETAILS IN THE CASE STUDY BELOW </h4>
+                        <img width="15" height="24" src="./images/arrow_down.svg" alt="arrow_down">
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="component-container-beyond-banking">
-    <div class="come-partner-us-content-wrapper">
-        <div class="come-partner-us-content">
-            <div class="come-partner-us-content-second-page">
-                <div class="come-partner-us-content-second-page-1-row">
-                    <div class="come-partner-us-content-second-page-1-row-content">
-                        <img width="381" height="215" src="./images/partner-us/img_regional.jpg" alt="img_regional">
-                        <div class="come-partner-us-content-second-page-1-row-content-text">
-                            <h3>Leverage our Strong Presence</h3>
-                            <p>OCBC&rsquo;s strong Asia presence and global network across 14 countries gives you access
-                                to a broad existing regional customer base. An advantage that’s strengthened further
-                                by our strategic foreign partnerships.</p>
-                            <a href="https://www.ocbc.com/group/index.html" target="_blank">FIND OUT MORE &#8594;</a>
-                        </div>
-                    </div>
-                    <div class="come-partner-us-content-second-page-2-row-content">
-                        <div class="come-partner-us-content-second-page-2-row-content-text">
-                            <h3>Access Strong Data Analytics Capability</h3>
-                            <p>We are a recognised leader in data and analytics, with a world-class enterprise data
-                                platform that keeps expanding through our ecosystem partners. By collaborating with
-                                us, you will be gaining valuable access to analytics leaders.</p>
-                        </div>
-                        <img width="381" height="215" src="./images/partner-us/img_dataanl.jpg" alt="img_dataanl">
-                    </div>
+    <div class="component-container-beyond-banking">
+
+    </div>
+    <div class="component-container-beyond-banking">
+
+    </div>
+    <div class="component-container-beyond-banking">
+
+    </div>
+    <div class="component-container-beyond-banking">
+
+    </div>
+    <div class="component-container-beyond-banking">
+        <div class="come-partner-us-wrapper-first">
+            <div class="come-partner-us-wrapper1">
+                <div id="first-come-partner-us-title-text"class="come-partner-us-title-text">
+                    <h1>Come Partner Us!</h1>
+                    <p>Neither a fintech firm nor bank? Doesn't matter. Here's how we can collaborate:</p>
                 </div>
-                <div class="come-partner-us-content-first-page-separator"
-                     style="margin-top: 86px;">
-                    <div class="icon-regional">
-                        <img src="./images/partner-us/regional.svg" alt="regional">
-                    </div>
-                    <div class="icon-data">
-                        <img src="./images/partner-us/data.svg" alt="data">
+                <div class="come-partner-us-content-wrapper1">
+                    <div class="come-partner-us-content-first-wrapper">
+                        <div class="come-partner-us-content-first-page">
+                            <div class="come-partner-us-content-first-page-1-row">
+                                <div class="come-partner-us-content-first-page-1-row1-content">
+                                    <div class="come-partner-us-content-first-page-1-row1-content-img">
+                                        <img width="381" height="215" src="./images/partner-us/img_experiment.jpg"
+                                            alt="img_experiment">
+                                    </div>
+                                    <div class="come-partner-us-content-first-page-1-row1-content-text-wrapper">
+                                        <div class="come-partner-us-content-first-page-1-row1-content-text">
+                                            <h3>Experiment with Us</h3>
+                                            <p>The Open Vault opens up opportunities for you to use OCBC Bank&rsquo;s
+                                                data
+                                                sandbox
+                                                where
+                                                you can experiment with real anonymised customer data and bring your
+                                                solution to
+                                                market swiftly.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="come-partner-us-content-first-page-1-row2-content">
+                                    <div class="come-partner-us-content-first-page-1-row2-content-text-wrapper">
+                                        <div class="come-partner-us-content-first-page-1-row2-content-text">
+                                            <h3>Connect via APIs</h3>
+                                            <p>The API Store is a sandbox-testing platform that lets you access
+                                                additional data
+                                                from
+                                                fintech to lifestyle, and create new solutions. Connect and tap into a
+                                                stunning
+                                                amount
+                                                of innovation!</p>
+                                            <a href="https://api.ocbc.com/store/" target="_blank"
+                                                rel="noopener noreferrer" class="come-partner-us-link">EXPLORE NOW
+                                                &#8594;</a>
+                                        </div>
+                                    </div>
+                                    <div class="come-partner-us-content-first-page-1-row2-content-img">
+                                        <img width="381" height="215" src="./images/partner-us/img_api.jpg"
+                                            alt="img_api">
+                                    </div>
+                                    <div class="come-partner-us-content-first-page-1-row2-content-text-small-wrapper">
+                                        <div class="come-partner-us-content-first-page-1-row2-content-small-text">
+                                            <h3>Connect via APIs</h3>
+                                            <p>The API Store is a sandbox-testing platform that lets you access
+                                                additional data
+                                                from
+                                                fintech to lifestyle, and create new solutions. Connect and tap into a
+                                                stunning
+                                                amount
+                                                of innovation!</p>
+                                            <a href="https://api.ocbc.com/store/" target="_blank"
+                                                rel="noopener noreferrer" class="come-partner-us-link">EXPLORE NOW
+                                                &#8594;</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="come-partner-us-content-first-page-separator">
+                                <div class="icon-sandbox">
+                                    <img src="./images/partner-us/sandbox.svg" alt="sandbox">
+                                </div>
+                                <div class="come-partner-us-content-first-page-separator-red-line"></div>
+                                <div class="icon-connect">
+                                    <img src="./images/partner-us/connect.svg" alt="connect">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="component-container-beyond-banking">
+    <div class="component-container-beyond-banking">
 
-</div>
-<div class="component-container-beyond-banking">
+    </div>
+    <div class="component-container-beyond-banking">
 
-</div>
-<div class="component-container-beyond-banking">
+    </div>
+    <div class="component-container-beyond-banking">
 
-</div>
-<script src="beyond-banking.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
+    </div>
+    <div class="component-container-beyond-banking">
+        <div class="come-partner-us-wrapper-second">
+            <div class="come-partner-us-wrapper2">
+                <div id="second-come-partner-us-title-text"class="come-partner-us-title-text">
+                    <h1>Come Partner Us!</h1>
+                    <p>Neither a fintech firm nor bank? Doesn't matter. Here's how we can collaborate:</p>
+                </div>
+                <div class="come-partner-us-content-wrapper2">
+                    <div class="come-partner-us-content-second-wrapper">
+                        <div class="come-partner-us-content-second-page">
+                            <div class="come-partner-us-content-second-page-1-row">
+                                <div class="come-partner-us-content-second-page-1-row-content">
+                                    <div class="come-partner-us-content-second-page-1-row-content-img">
+                                        <img width="381" height="215" src="./images/partner-us/img_regional.jpg"
+                                            alt="img_regional">
+                                    </div>
+                                    <div class="come-partner-us-content-second-page-1-row-content-text-wrapper">
+                                        <div class="come-partner-us-content-second-page-1-row-content-text">
+                                            <h3>Leverage our Strong Presence</h3>
+                                            <p>OCBC&rsquo;s strong Asia presence and global network across 14 countries
+                                                gives
+                                                you
+                                                access
+                                                to a broad existing regional customer base. An advantage that’s
+                                                strengthened
+                                                further
+                                                by our strategic foreign partnerships.</p>
+                                            <a href="https://www.ocbc.com/group/index.html" target="_blank"
+                                                rel="noopener noreferrer" class="come-partner-us-link">FIND OUT MORE
+                                                &#8594;</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="come-partner-us-content-second-page-2-row-content">
+                                    <div class="come-partner-us-content-second-page-2-row-content-text-wrapper">
+                                        <div class="come-partner-us-content-second-page-2-row-content-text">
+                                            <h3>Access Strong Data Analytics Capability</h3>
+                                            <p>We are a recognised leader in data and analytics, with a world-class
+                                                enterprise
+                                                data
+                                                platform that keeps expanding through our ecosystem partners. By
+                                                collaborating
+                                                with
+                                                us, you will be gaining valuable access to analytics leaders.</p>
+                                        </div>
+                                    </div>
+                                    <div class="come-partner-us-content-second-page-2-row-content-img">
+                                        <img width="381" height="215" src="./images/partner-us/img_dataanl.jpg"
+                                            alt="img_dataanl">
+                                    </div>
+                                    <div class="come-partner-us-content-second-page-2-row-content-text-small-wrapper">
+                                        <div class="come-partner-us-content-second-page-2-row-content-text">
+                                            <h3>Access Strong Data Analytics Capability</h3>
+                                            <p>We are a recognised leader in data and analytics, with a world-class
+                                                enterprise
+                                                data
+                                                platform that keeps expanding through our ecosystem partners. By
+                                                collaborating
+                                                with
+                                                us, you will be gaining valuable access to analytics leaders.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="come-partner-us-content-second-page-separator">
+                                <div class="icon-regional">
+                                    <img src="./images/partner-us/regional.svg" alt="regional">
+                                </div>
+                                <div class="come-partner-us-content-second-page-separator-red-line"></div>
+                                <div class="icon-data">
+                                    <img src="./images/partner-us/data.svg" alt="data">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="component-container-beyond-banking">
 
+    </div>
+    <div class="component-container-beyond-banking">
 
+    </div>
+    <div class="component-container-beyond-banking">
+        <div class="case-studies-container-wrapper">
+            <div class="case-studies-container" id="case-studies">
+                <div class="case-studies-content-wrapper">
+                    <div class="case-study1-content" data-toggle="modal" 
+                    data-target="#case-study1-modal-content" onclick="modalOpen()">
+                        <img width="500" height="500" class="case-study__backdrop"
+                            src="./images/partner-us/case_starhub.jpg" alt="case_starhub">
+                        <div class="case-study1-content-text">
+                            <p style="font-weight: bold;">CASE STUDY 01</p>
+                            <h2 class="case-study__case-heading">"We Economy" with Starhub</h2>
+                            <p class="case-study__case-desc">A bank and a telco innovating together? That&rsquo;s right!
+                                In fact, Singapore&rsquo;s first
+                                bank-telco partnership is driving a more collaborative ecosystem across sectors.</p>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="case-study1-modal-content" role="dialog" style="text-align: center;">
+                        <div class="case-study1-content-wrapper">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" onclick="modalOpen()"
+                                    style="margin: 5px 10px;">&times;</button>
+                                <h2 class="modal-title" id="weEconomyWithStarhub">"We Economy" with Starhub</h2>
+                            </div>
+                            <div class="modal-body">
+                                <div class="case-study1-modal-body-img-small">
+                                    <img src="./images/partner-us/case_starhub_thumb.jpg" alt="case_starhub">
+                                </div>
+                                <div class="case-study1-modal-body-text">
+                                    <p>As customers increasingly demand solutions that make life simpler, the lines
+                                        separating businesses and industries are set to converge. "We Economy" marks
+                                        Singapore’s first bank&#8209;telco strategic partnership created to drive
+                                        a more collaborative ecosystem. Bringing together essential businesses and
+                                        partnership networks, “We Economy” members will be able to leverage the combined
+                                        efforts of all companies involved to discover new markets, effect broader
+                                        change and deliver greater customer value.</p>
+                                    <p>Besides delivering more relevant solutions to our combined customer base, OCBC
+                                        and StarHub will also explore opportunities in Artificial Intelligence and
+                                        Internet of Things to build a more connected future. Businesses who share
+                                        our ideology are welcome to join our ecosystem.</p>
+                                    <a href="http://www.innovatingtogether.sg/" target="_blank"
+                                        rel="noopener noreferrer">
+                                        FIND OUT MORE &#8594;</a>
+                                </div>
+                                <div class="case-study1-modal-body-img">
+                                    <img src="./images/partner-us/case_starhub_thumb.jpg" alt="case_starhub">
+                                </div>
+                            </div>
 
-
-</script>
+                            <div class="case-study1-modal-body-video">
+                                <video width="820" height="461" poster="./images/partner-us/case_starhub_vidcover.jpg"
+                                    id="video-partner" src="./videos/partner-us/case_starhub_vid.mp4" controls
+                                    controlslist="nodownload"></video>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case-study2-content" data-toggle="modal" 
+                    data-target="#case-study2-modal-content" onclick="modalOpen()">
+                        <img width="500" height="500" class="case-study__backdrop"
+                            src="./images/partner-us/case_oneadvisor.jpg" alt="case_oneadvisor">
+                        <div class="case-study2-content-text">
+                            <p style="font-weight: bold;">CASE STUDY 02</p>
+                            <h2 class="case-study__case-heading">OneAdvisor Home</h2>
+                            <p class="case-study__case-desc">Not just a mortgage loan provider but more home purchasing
+                                partner – a bank&rsquo;s role
+                                is shifting drastically. Check out how OCBC is reinventing the end-to-end customer
+                                journey.</p>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="case-study2-modal-content" style="text-align: center;">
+                        <div class="case-study2-content-wrapper">
+                            <a class="close" data-dismiss="modal" 
+                            aria-label="Close" style="margin: 20px;" onclick="modalOpen()">
+                                <span aria-hidden="true">&times;</span>
+                            </a>
+                            <div class="modal-header">
+                                <h2 class="modal-title" id="oneAdvisorHome">OneAdvisor Home</h2>
+                            </div>
+                            <div class="modal-body">
+                                <div class="case-study2-modal-body-img-small">
+                                    <img src="./images/partner-us/case_oneadvisor_thumb.jpg" alt="case_oneadvisor">
+                                </div>
+                                <div class="case-study2-modal-body-text">
+                                    <p>An API based collaboration among multiple partners in the property ecosystem,
+                                        OneAdvisor Home is a one-stop portal that helps property buyers make informed
+                                        purchase decisions. Besides detailing each step of the home buying process,
+                                        buyers are provided with a seamless financing journey as they learn what
+                                        are the types of property they can afford, bank loan options and how to use
+                                        their Central Provident Fund balances. Eventually, they can connect with
+                                        a mortgage specialist for a more personalised consultation.</p>
+                                    <p>Going above most general advisory tools in the market, OneAdvisor Home’s
+                                        affordability
+                                        tool can delve deep to provide more specific details such as down payment,
+                                        stamp duty as well as legal fees payable.</p>
+                                    <a href="https://www.ocbc.com/personal-banking/one-advisor/index.html?pid=sg:en:others:loans:homeloan:Evergreen:Jan18:internal:ocbc:personalanding:textbanner::centre:"
+                                        target="_blank" rel="noopener noreferrer">FIND OUT MORE &#8594;</a>
+                                </div>
+                                <div class="case-study2-modal-body-img">
+                                    <img src="./images/partner-us/case_oneadvisor_thumb.jpg" alt="case_oneadvisor">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        if (window.matchMedia('screen and (max-width: 900px)').matches) {
+            var head = document.getElementsByTagName("head")[0];
+            s = document.createElement('script');
+            s.setAttribute('type', 'text/javascript');
+            s.setAttribute('src', 'beyond-banking-small.js');
+            head.insertBefore(s, head.firstChild);
+        }
+        else {
+            var head = document.getElementsByTagName("head")[0];
+            s = document.createElement('script');
+            s.setAttribute('type', 'text/javascript');
+            s.setAttribute('src', 'beyond-banking.js');
+            head.insertBefore(s, head.firstChild);
+        }
+    </script>
 </body>
 </html>
